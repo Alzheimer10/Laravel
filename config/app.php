@@ -38,7 +38,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', false),
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -64,7 +64,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'America/La_Paz',
 
     /*
     |--------------------------------------------------------------------------
@@ -172,11 +172,11 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
+        systemOrionCorp\Providers\AppServiceProvider::class,
+        systemOrionCorp\Providers\AuthServiceProvider::class,
+        // systemOrionCorp\Providers\BroadcastServiceProvider::class,
+        systemOrionCorp\Providers\EventServiceProvider::class,
+        systemOrionCorp\Providers\RouteServiceProvider::class,
 
     ],
 
